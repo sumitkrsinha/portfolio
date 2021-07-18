@@ -28,4 +28,15 @@ body{
 
 .about{
     background-color: crimson;
+    padding: 20px;
+}
+
+.skills{
+    background-color: darkviolet;
+    padding: 20px;
+}
+
+.work{
+    background-color: forestgreen;
+    padding: 20px;
 }
