@@ -1,112 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
     <title>home</title>
-</head>
-<body>
-    <div class="header">
-        <div class="navbar">
-        <a href="#">Home</a>
-		<a href="#">About</a>
-		<a href="#">skills</a>
-		<a href="#">Works</a>
-        <a href="#">contact</a>
-        </div>
-        <h2>Hi,I am John Doe</h2>
-        <p>Multidisciplinary designer who hacks at,
-        makes and occasionally breaks things.
-       </p>
-       <p>Product Design Director on the team behind xyz.org</p>
-       <p>Less moody in real life</p>
+  </head>
+  <body>
+    <div class="section header" id="home">
+      <div class="navbar flex">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#works">Works</a></li>
+              <li><a href="#contact">Contact</a></li>
+      </div>
+      <div class="flex intro">
+          <div class="intro left">
+        <h1>Hi, I am <span id="name">John Doe</span></h1>
+        <p>
+          Just a Web Developer
+        </p>
     </div>
-    
-    <div class="about">
-        <h1><u>About John</u></h1>
-        <p>John loves to break boundaries and she always comes with a 'can do' attitude with a strong sense of responsibility looking forward to working with a team that enjoys challenging projects and has an innovative outlook.</p>
-
-        <p>On an average day, he is just a programmer but she knows her skills can add value to lives. He is also an entrepreneur by nature as she loves working on converting ideas and thoughts into visual pieces. She takes pride in being a team player.</p>
-            
-        <p>John's major skills include Data Structures and problem-solving and his career goal is to use his problem-solving skill set to solve a real-world problem.</p>
-            
-        <p>He is open to mentors, guides, potential co-founders to upskill her network and add value to his career. He is also looking forward to collaborating on projects and learning new skills together.</p>
-            
-        <p>He is also open to tips on interview preparation, building a personal brand, launching a start-up, and he really really needs productivity tips.</p>
-            
-        <p>He is always open to new opportunities and would love to have a chat over coffee.</p>
-            
-        <p>Feel free to DM here or connect on Instagram/Twitter - @john_doe</p>
-        <p> Mail id - johndoe25@gmail.com</p>
+    <div class="intro right">
+        <!-- <img src="img/cycleman.jpeg" alt="Me" width="500px"> -->
+    </div>
+      </div>
+      
     </div>
 
-    <div class="skills">
-        <h1><u>Skills</u></h1>
-        <ul>
-            <li><h2>Front-End Skills</h2></li>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React.js</li>
-                <li>Bootstrap</li>
-            </ul>
-        </ul>  
-        <ul>
-            <li><h2>Programming Skills</h2></li>
-            <ul>
-                <li>C</li>
-                <li>C++</li>
-                <li>Java</li>
-                <li>Python</li>
-            </ul>
-        </ul>   
+    <div class="section about" id="about">
+      <h1><u>About John</u></h1>
+      <p>
+        John loves to break boundaries and she always comes with a 'can do'
+        attitude with a strong sense of responsibility looking forward to
+        working with a team that enjoys challenging projects and has an
+        innovative outlook.
+      <br>
+
+      
+        John's major skills include Data Structures and problem-solving and his
+        career goal is to use his problem-solving skill set to solve a
+        real-world problem.
+      <br>
+
+      
+        He is also open to tips on interview preparation, building a personal
+        brand, launching a start-up, and he really really needs productivity
+        tips.
+      <br>
+
+      
+        He is always open to new opportunities and would love to have a chat
+        over coffee.
+      <br>
+
+      Feel free to DM here or connect on Instagram/Twitter - @john_doe <br>
+      Mail id - johndoe25@gmail.com</p>
     </div>
 
-    <div class="work">
-        <h1><u>Work/Projects</u></h1>
-        <ul>
-            <li><h2><u>Work</u></h2></li>
-            <p>I strive to create elegant solutions that surprise and delight users, while</p>
-            <p>keeping complex technical dependencies in mind for implementation,</p> 
-            <p>scalability and developer sanity.</p>
-            <br>
-            <p>I've worked with small, agile teams on projects and</p>
-            <p>development teams spannig multiple years.</p>
-            <br>
-            <p>Depending on team, resources and deliverables I've won hats over</p>
-            <p>the years-holding titles like UI & UX Designer</p>
-            <p>Front-end Developer.</p>
+    <div class="section skills" id="skills">
+      <h1>Skills</h1>
+        <h2>Front-End Skills</h2>
+        <ul class="skill frontend">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>React.js</li>
+          <li>Bootstrap</li>
         </ul>
-
-        <ul>
-            <li><h2><u>Projects</u></h2></li>
-            <br>
-            <ul>
-                <li><h3><u>TicTacToe</u></h3>
-                    <img src="img/tictactoe.png" alt="tictactoe">
-                </li>
-            </ul>
-            <ul>
-                <li><h3><u>GitSearch</u></h3>
-                    <img src="img/gitsearch.png" alt="tictactoe">
-                </li>
-            </ul>
-            <ul>
-                <li><h3><u>Sorting Algorithm Visualizer</u></h3>
-                    <img src="img/sorting.png" alt="tictactoe">
-                </li>
-            </ul>
+        <h2>Programming Skills</h2>
+        <ul class="skills programming">
+          <li>C</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>Python</li>
         </ul>
     </div>
 
-    <div class="contact">
+    <div class="section work" id="work">
+      <h1><u>Work/Projects</u></h1>
+      <ul>
+        <li>
+          <h2><u>Work</u></h2>
+        </li>
+        <p>
+          I strive to create elegant solutions that surprise and delight users,
+          while
+        </p>
+        <p>
+          keeping complex technical dependencies in mind for implementation,
+        </p>
+        <p>scalability and developer sanity.</p>
+        <br />
+        <p>I've worked with small, agile teams on projects and</p>
+        <p>development teams spannig multiple years.</p>
+        <br />
+        <p>Depending on team, resources and deliverables I've won hats over</p>
+        <p>the years-holding titles like UI & UX Designer</p>
+        <p>Front-end Developer.</p>
+      </ul>
 
+      <ul>
+        <li>
+          <h2><u>Projects</u></h2>
+        </li>
+        <br />
+        <ul>
+          <li>
+            <h3><u>TicTacToe</u></h3>
+            <img src="img/tictactoe.png" alt="tictactoe" width="500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h3><u>GitSearch</u></h3>
+            <img src="img/gitsearch.png" alt="tictactoe" width="500" />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h3><u>Sorting Algorithm Visualizer</u></h3>
+            <img src="img/sorting.png" alt="tictactoe" width="500" />
+          </li>
+        </ul>
+      </ul>
     </div>
-    <div class="footer">
 
-    </div>
-</body>
+    <div class="section contact" id="contact"></div>
+    <div><a href="#home">Top</a></div>
+    <div class="footer"></div>
+  </body>
 </html>
