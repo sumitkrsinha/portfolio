@@ -25,6 +25,8 @@ body {
   background-color: #4b2ba7;
   justify-content: center;
   align-items: center;
+  /* box-shadow: 0px 6px 13px -1px rgba(0,0,0,0.75); */
+  box-shadow: 0px 6px 13px -1px rgba(10, 10, 10, 0.575);
 }
 .navbar li {
   list-style-type: none;
@@ -41,9 +43,11 @@ body {
   flex-direction: row;
 }
 .intro .right {
-  width: 50%;
-  height: 80vh;
+  width: 400px;
+  height: 400px;
   background: url('../img/cycleman.jpeg');
+  margin:5%;
+
 /*  
   background: linear-gradient(
       to right bottom,
@@ -53,7 +57,8 @@ body {
     url("../img/cycleman.jpeg"); */
     background-size: cover;
     background-position: top;
-    clip-path: inset(5% 20% 15% 10%);
+    /* clip-path: inset(5% 20% 15% 10%); */
+    box-shadow: 0.5rem 0.5rem #000, -0.5rem -0.5rem rgba(250, 247, 47, 0.993);
 }
 .intro .left {
   width: 50%;
