@@ -1,0 +1,57 @@
+#footer{
+    background-color: #444444;
+    min-height: 50vh;
+}
+.navlinks{
+    width: 50%;
+}
+.social{
+    width: 50%;
+}
+.hold{
+    justify-content: center;
+    align-items: center;
+}
+.hold div {
+    margin: 15px;
+      }
+
+.hold div a {
+    color: #FECA4A;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+
+.navlinks h1{
+    font-size:35px;
+    font-weight: 600;
+    color: #FECA4A;
+    
+}
+.social h1{
+    font-size:35px;
+    font-weight: 600;
+    color: #FECA4A;
+    }
+
+.resumebutton{
+    padding: 5px;
+    background-color: rgb(70, 21, 21);
+    color: #FECA4A;
+    font-size: 20px;
+    margin: 10px;
+    }    
+
+.top a{
+    color: #FECA4A;
+    text-decoration: none;
+    font-size: 70px;
+    font-weight: 500;
+}  
+.rights{
+    padding: 10px;
+    margin-top: 50px;
+}  
+
