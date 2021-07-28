@@ -94,21 +94,27 @@ img{
         flex-direction: column;
         margin:0 auto;
         width:100%;
+        font-size: medium;
     }
     .work .title{
-        margin-left:20%;
+        margin-left:10%;
+        font-size:20px;
+        width:fit-content;
     }
     .sample1:hover .overlay,.sample2:hover .overlay2,.sample3:hover .overlay{
         height:0%;
     }
     .work img{
-        height:250px;
-        width:250px;
+        height:200px;
+        width:200px;
     }
     .sample1,.sample2,.sample3{
-        margin-left:20%;
+        margin-left:15%;
     }
     .work-samples .responsive-text{
         display: block;
+        font-size:20px;
+        font-weight: 700;
+        margin-left:10%;
     }
 }

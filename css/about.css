@@ -36,6 +36,8 @@
   font-size: 20px;
   font-weight: 500;
   color: rgb(70, 21, 21);
+  text-align: justify;
+  text-justify: inter-word;
 }
 @media screen and (max-width: 800px) {
   .about .right{
@@ -45,11 +47,15 @@
   .about .left{
     border-radius:50%;
     box-shadow:0 0 0 3px #5031a9;
-    height:300px;
-    width:300px;
+    height:250px;
+    width:250px;
     margin:20px auto;
   }
   .about .title{
     margin-left:15%;
+    width:fit-content;
+  }
+  .about .right .p{
+    font-size:14px;
   }
 }

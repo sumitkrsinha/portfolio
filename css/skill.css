@@ -34,4 +34,7 @@
         height:150px;
         width:150px;
     }
+    .skills .title{
+        width:fit-content;
+    }
 }

@@ -106,7 +106,7 @@ body {
     font-size:25px;
     margin-left:20%;
 }
-@media screen and (max-width:768px) and (min-width:481px){
+@media screen and (max-width:800px){
 
   .flex{
     flex-direction:column;
@@ -123,17 +123,31 @@ body {
   }
   .intro .left{
     width:100%;
-    padding:10%;
+    padding:5%;
+    margin-top:10px;
+  }
+  .intro .left p{
+    font-size:20px;
+    margin:0 auto;
+    width:fit-content;
+  }
+  #name{
+    font-size:50px;
+  }
+  .intro .left h1{
+    font-size:20px;
+    margin-bottom: 0;
   }
   .intro .right{
     border-radius: 50%;
     box-shadow: 0 0 0 3px var(--yellow);;
-    width:350px;
-    height:350px;
-    margin:20px auto;
+    width:250px;
+    height:250px;
+    margin:28vh auto 0 auto;
+    /* font-size:10px; */
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .navbar.responsive {position: relative;}
   .navbar.responsive .icon {
     position: absolute;
