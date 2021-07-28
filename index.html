@@ -16,23 +16,25 @@
   </head>
   <body>
     <div class="section header" id="home">
-      <div class="navbar flex">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#contact">Contact</a></li>
+      <div class="navbar " id="navbar">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#works">Works</a>
+              <a href="#contact">Contact</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars fa-2x"></i></a>
       </div>
       <div class="flex intro">
+        <div class="intro right">
+          <!-- <img src="img/cycleman.jpeg" alt="Me" width="500px"> -->
+      </div>
           <div class="intro left">
         <h1>Hi, I am <span id="name">John Doe</span></h1>
         <p>
           Just a Web Developer
         </p>
     </div>
-    <div class="intro right">
-        <!-- <img src="img/cycleman.jpeg" alt="Me" width="500px"> -->
-    </div>
+   
       </div>
       
     </div>
@@ -42,8 +44,8 @@
         <!--for image -->
       </div>
     <div class="about right" >
-      <center><h1>About John</h1></center>
-      <br>
+      <div class="title"><h1>About Me</h1></div>
+      
       <p>
         John loves to break boundaries and she always comes with a 'can do'
         attitude with a strong sense of responsibility looking forward to
@@ -74,53 +76,45 @@
   </div>
 
     <div class="section skills" id="skills">
-      <h1>Skills</h1>
-        <h2>Front-End Skills</h2>
-        <ul class="skill frontend">
+      <div class="title"><h1>Skills</h1></div>
+      <div class="list flex">
           <li><img src="https://img.icons8.com/color/144/000000/html-5--v1.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/css3.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/javascript--v1.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/react-native.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/bootstrap.png"/></li>
-        </ul>
-        <h2>Programming Skills</h2>
-        <ul class="skills programming">
+        
+        
           <li><img src="https://img.icons8.com/color/144/000000/c-programming.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/c-plus-plus-logo.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/java-coffee-cup-logo.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/python--v1.png"/></li>
-        </ul>
+        </div>
     </div>
 
     <div class="section work" id="work">
-      <h1>Work/Projects</h1>
-          <h2>Work</h2>
-        <p>
-          I strive to create elegant solutions that surprise and delight users,
-          while
-        <br>
-          keeping complex technical dependencies in mind for implementation,
-        <br>scalability and developer sanity.
-        <br />
-        I've worked with small, agile teams on projects and
-        development teams spannig multiple years.
-        <br />
-        Depending on team, resources and deliverables I've won hats over
-        the years-holding titles like UI & UX Designer</p>
-        <p>Front-end Developer.</p>
-        <div class="flex work-samples">
-          <div class="sample1"><a href=""><img src="img/github.png" alt="GitSearch"></a> 
+      <div class="title"><h1>Projects</h1></div>
+
+          
+        <div class="work-samples flex">
+          <div class="sample1"><a href="https://reetesh818.github.io/Gitsearch/"><img src="img/github.png" alt="GitSearch"></a> 
             <div class="overlay">
             <div class="text"><a href="https://reetesh818.github.io/Gitsearch">GitSearch</a></div>
-          </div></div>
-          <div class="sample2"><a href=""><img  src="img/sortingvisualizer.png" alt="SortingVisualizer"></a>
+          </div>
+          <div class="responsive-text" style="margin-left:13%">GitSearch</div>
+        </div>
+          <div class="sample2"><a href="https://reetesh818.github.io/SortingVisualiser/index.html"><img  src="img/sortingvisualizer.png" alt="SortingVisualizer"></a>
           <div class="overlay2">
             <div class="text"><a href="https://reetesh818.github.io/Gitsearch">SortingVisualizer</a></div>
-          </div></div>
-          <div class="sample3"><a href=""><img  src="img/tictactoehd.jpg" alt="tictactoe"></a>
+          </div>
+          <div class="responsive-text">SortingVisualizer</div>
+        </div>
+          <div class="sample3"><a href="https://reetesh818.github.io/tictactoe/"><img  src="img/tictactoehd.jpg" alt="tictactoe"></a>
           <div class="overlay">
             <div class="text"><a href="https://reetesh818.github.io/tictactoe">TicTacToe</a></div>
-          </div></div>
+          </div>
+          <div class="responsive-text" style="margin-left:13%;">TicTacToe</div>
+        </div>
         </div>
 
       
@@ -130,7 +124,7 @@
     
     <!--Footer Section Here-->
 
-    <div class="flex section footer" id="footer">
+    <div class="flex  footer" id="footer">
       <div class="navlinks"><br>
         <center><h1>Links</h1></center><br>
 
@@ -163,5 +157,15 @@
         </div></center>      
       </div>
     </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
   </body>
 </html>
