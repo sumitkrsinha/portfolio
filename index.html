@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,22 +16,23 @@
   </head>
   <body>
     <div class="section header" id="home">
-      <div class="navbar flex">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#contact">Contact</a></li>
+      <div class="navbar " id="navbar">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#work">Works</a>
+              <a href="#contact">Contact</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars fa-2x"></i></a>
       </div>
       <div class="flex intro">
+        <div class="intro right">
+          <!-- <img src="img/cycleman.jpeg" alt="Me" width="500px"> -->
+      </div>
           <div class="intro left">
         <h1>Hi, I am <span id="name">John Doe</span></h1>
         <p>
-          Just a Web Developerded
+          Just a Web Developer
         </p>
-    </div>
-    <div class="intro right">
-        <!-- <img src="img/cycleman.jpeg" alt="Me" width="500px"> -->
     </div>
       </div>
       
@@ -41,31 +43,25 @@
         <!--for image -->
       </div>
     <div class="about right" >
-      <center><h1>About John</h1></center>
-      <br>
+      <div class="title"><h1>About Me</h1></div>
+      
       <p>
-        John loves to break boundaries and she always comes with a 'can do'
+        I love to break boundaries and I always come with a 'can do'
         attitude with a strong sense of responsibility looking forward to
         working with a team that enjoys challenging projects and has an
         innovative outlook.
-      <br>
+      <br><br>
 
       
-        John's major skills include Data Structures and problem-solving and his
-        career goal is to use his problem-solving skill set to solve a
-        real-world problem.
-      <br>
-
-      
-        He is also open to tips on interview preparation, building a personal
+        I am also open to tips on interview preparation, building a personal
         brand, launching a start-up, and he really really needs productivity
         tips.
-      <br>
+      <br><br>
 
       
-        He is always open to new opportunities and would love to have a chat
+        I always open to new opportunities and would love to have a chat
         over coffee.
-      <br>
+      <br><br>
 
       Feel free to DM here or connect on Instagram/Twitter - @john_doe <br>
       Mail id - johndoe25@gmail.com</p>
@@ -73,77 +69,53 @@
   </div>
 
     <div class="section skills" id="skills">
-      <h1>Skills</h1>
-        <h2>Front-End Skills</h2>
-        <ul class="skill frontend">
+      <div class="title"><h1>Skills</h1></div>
+      <div class="list flex">
           <li><img src="https://img.icons8.com/color/144/000000/html-5--v1.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/css3.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/javascript--v1.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/react-native.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/bootstrap.png"/></li>
-        </ul>
-        <h2>Programming Skills</h2>
-        <ul class="skills programming">
+        
+        
           <li><img src="https://img.icons8.com/color/144/000000/c-programming.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/c-plus-plus-logo.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/java-coffee-cup-logo.png"/></li>
           <li><img src="https://img.icons8.com/color/144/000000/python--v1.png"/></li>
-        </ul>
+        </div>
     </div>
 
     <div class="section work" id="work">
-      <h1><u>Work/Projects</u></h1>
-      <ul>
-        <li>
-          <h2><u>Work</u></h2>
-        </li>
-        <p>
-          I strive to create elegant solutions that surprise and delight users,
-          while
-        </p>
-        <p>
-          keeping complex technical dependencies in mind for implementation,
-        </p>
-        <p>scalability and developer sanity.</p>
-        <br />
-        <p>I've worked with small, agile teams on projects and</p>
-        <p>development teams spannig multiple years.</p>
-        <br />
-        <p>Depending on team, resources and deliverables I've won hats over</p>
-        <p>the years-holding titles like UI & UX Designer</p>
-        <p>Front-end Developer.</p>
-      </ul>
+      <div class="title"><h1>Projects</h1></div>
 
-      <ul>
-        <li>
-          <h2><u>Projects</u></h2>
-        </li>
-        <br />
-        <ul>
-          <li>
-            <h3><u>TicTacToe</u></h3>
-            <img src="img/tictactoe.png" alt="tictactoe" width="500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3><u>GitSearch</u></h3>
-            <img src="img/gitsearch.png" alt="tictactoe" width="500" />
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3><u>Sorting Algorithm Visualizer</u></h3>
-            <img src="img/sorting.png" alt="tictactoe" width="500" />
-          </li>
-        </ul>
-      </ul>
+          
+        <div class="work-samples flex">
+          <div class="sample1"><a href="https://reetesh818.github.io/Gitsearch/"><img src="img/github.png" alt="GitSearch"></a> 
+            <div class="overlay">
+            <div class="text"><a href="https://reetesh818.github.io/Gitsearch">GitSearch</a></div>
+          </div>
+          <div class="responsive-text" style="margin-left:13%">GitSearch</div>
+        </div>
+          <div class="sample2"><a href="https://reetesh818.github.io/SortingVisualiser/index.html"><img  src="img/sortingvisualizer.png" alt="SortingVisualizer"></a>
+          <div class="overlay2">
+            <div class="text"><a href="https://reetesh818.github.io/Gitsearch">SortingVisualizer</a></div>
+          </div>
+          <div class="responsive-text">SortingVisualizer</div>
+        </div>
+          <div class="sample3"><a href="https://reetesh818.github.io/tictactoe/"><img  src="img/tictactoehd.jpg" alt="tictactoe"></a>
+          <div class="overlay">
+            <div class="text"><a href="https://reetesh818.github.io/tictactoe">TicTacToe</a></div>
+          </div>
+          <div class="responsive-text" style="margin-left:15%;">TicTacToe</div>
+        </div>
+        </div>
+
+      
     </div>
 
     <div class="section contact" id="contact">
       <div class="content">
-        <h1>Contact Us</h1>
-        <p>Let us know what is in your mind</p>
+        <h1>Contact Me</h1>
       </div>
 
       <div class="container">
@@ -200,27 +172,27 @@
     
     <!--Footer Section Here-->
 
-    <div class="flex section footer" id="footer">
+    <div class="flex  footer" id="footer">
       <div class="navlinks"><br>
         <center><h1>Links</h1></center><br>
 
        <div class="hold flex"> 
         <div><a href="#home" class="fa fa-home"> Home</a></div>
         <div><a href="#about" class="fa fa-user"> About</a></div>
-        <div><a href="#skills" class="fa fa-skills"> Skills</a></div>
-        <div><a href="#works" class="fa fa-works"> Works</a></div>
-        <div><a href="#contact" class="fa fa-contact"> Contact</a></div>
+        <div><a href="#skills" class="fa fa-star"> Skills</a></div>
+        <div><a href="#works" class="fa fa-code"> Works</a></div>
+        <div><a href="#contact" class="fa fa-phone"> Contact</a></div>
        </div><br>
 
        <!--adding download resume button-->
        <center><button class="resumebutton">Download Resume</a></button></center> 
 
        <!--Top Arrow -->
-       <div class="top"><a href="#home">&uarr;</a></div>
+
       </div>
 
       <div class="social"><br>
-        <center><h1>social</h1></center><br>
+        <center><h1>Social</h1></center><br>
         <div class="hold flex"> 
           <div><a href="#" class="fa fa-instagram"> Instagram</a></div>
           <div><a href="#" class="fa fa-linkedin"> Linkedin</a></div>
@@ -232,6 +204,19 @@
           <p>&copy;All rights reserved.</p>
         </div></center>      
       </div>
+      <div class="top"><a href="#home">&uarr;</a></div>
+
     </div>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
   </body>
 </html>

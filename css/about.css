@@ -1,35 +1,61 @@
-#about{
-    background: #FECA4A;
+#about {
+  background: #feca4a;
+  margin-top:20vh;
 }
 
 .about .left {
-    width: 400px;
-    height: 400px;
-    background: url('../img/cycleman.jpeg');
-    margin:5%;
-    background-size: cover;
-    background-position: top;
-    /* clip-path: inset(5% 20% 15% 10%); */
-    box-shadow: 0.5rem 0.5rem #000, -0.5rem -0.5rem rgba(250, 247, 47, 0.993);
-    
+  width: 400px;
+  height: 400px;
+  background: url("../img/cycleman.jpeg");
+  margin: auto auto;
+  background-size: cover;
+  background-position: top;
+  /* clip-path: inset(5% 20% 15% 10%); */
+  box-shadow: 0.5rem 0.5rem #000, -0.5rem -0.5rem rgba(250, 247, 47, 0.993);
+}
+.about .title{
+  display: inline-block;
+  height:50px;
+  width:300px;
+  border-bottom:2px solid #5031a9;
+  text-align:center;
+  text-transform:uppercase;
+  margin-bottom:5%;
 }
 
 .about .right {
-    width: 50%;
-    
+  width: 50%;
+  margin:auto auto;
+}
+.about .right h1 {
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(70, 21, 21);
+}
+.about .right p {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(70, 21, 21);
+  text-align: justify;
+  text-justify: inter-word;
+}
+@media screen and (max-width: 800px) {
+  .about .right{
+    width:100%;
+    margin:0 auto;
   }
-.about .right  h1{
-      font-size:35px;
-      font-weight: 600;
-      color: rgb(70, 21, 21);
-       
-    }
-    .about .right  p{
-        font-size:20px;
-        font-weight: 500;
-        color: rgb(70, 21, 21);
-         
-      }   
-
-    
-  
+  .about .left{
+    border-radius:50%;
+    box-shadow:0 0 0 3px #5031a9;
+    height:250px;
+    width:250px;
+    margin:20px auto;
+  }
+  .about .title{
+    margin-left:15%;
+    width:fit-content;
+  }
+  .about .right .p{
+    font-size:14px;
+  }
+}

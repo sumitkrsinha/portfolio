@@ -28,12 +28,16 @@
     font-size:40px;
     font-weight: 600;
     color: #FECA4A;
+    width:fit-content;
+    border-bottom: 2px solid red;
     
 }
 .social h1{
     font-size:40px;
+    width:fit-content;
     font-weight: 600;
     color: #FECA4A;
+    border-bottom:2px solid red;
     }
 
 .resumebutton{
@@ -54,4 +58,11 @@
     padding: 10px;
     margin-top: 50px;
 }  
-
+@media screen and (max-width: 800px){
+    .navlinks{
+        width:100%;
+    }
+    .social{
+        width:100%;
+    }
+}
